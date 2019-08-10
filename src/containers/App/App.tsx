@@ -1,10 +1,10 @@
 import * as React from 'react';
-import './style.css';
+import ResizableBlock from '../../components/ResizableBlock';
 
 export default class App extends React.PureComponent<{}> {
   render() {
     return (
-      <div>Hello, world</div>
-    )
+      <ResizableBlock />
+    );
   }
 }
