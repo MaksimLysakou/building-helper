@@ -54,10 +54,14 @@ export default class ResizableBlock extends React.PureComponent<Props, State> {
           });
           break;
         case 'right':
-          this.setState({ width: this.state.width + event.movementX });
+          this.setState({
+            width: this.state.width + event.movementX,
+          });
           break;
         case 'bottom':
-          this.setState({ height: this.state.height + event.movementY });
+          this.setState({
+            height: this.state.height + event.movementY,
+          });
           break;
         case 'left':
           this.setState({
